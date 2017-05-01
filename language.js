@@ -10,7 +10,7 @@ Prism.languages.openhab = {
         greedy:  true
     },
     'function': [
-        /(^|[\r\n]+)([A-Z]{1}[a-z]+)/,
+        /(^|[\r\n]+)([A-Z]{1}[a-z]+) /,
         /(^|[\r\n\s]+)(sitemap|rule|when|then|end|Item|Frame|Default|Switch|Slider|Text)/, // TODO: this will match too often + does not match all keywords
         /Item|changed to|changed/ // TODO: this will match too often + does not match all keywords
     ],
